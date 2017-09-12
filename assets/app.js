@@ -1,5 +1,5 @@
       //topics in a array
-      var topics = ["Fullmetal Alchemist", "Cowboy Bebop", "Trigun", "One Piece", "DragonBall Z"];
+      var topics = ["Fullmetal Alchemist", "Cowboy Bebop", "Trigun", "One Piece", "Dragon Ball Z"];
       
       function displayAnimeInfo() {
       //set variables, getting an attribute for the name of the movie and 
@@ -82,7 +82,7 @@
         }
       }
 
-      //creates a function which pushes those which are added onto the array.
+      //creates a function which pushes those which are added by button onto the array, and then empties the value.
 
       $("#add-anime").on("click", function(event) {
         event.preventDefault();
@@ -92,6 +92,8 @@
         topics.push(anime);
 
         renderButtons();
+
+        $("#anime-input").val("")
       });
 
       renderButtons();
