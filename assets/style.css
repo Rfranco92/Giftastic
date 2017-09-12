@@ -1,0 +1,11 @@
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+      text-align: center;
+    }
+  
+  #anime{
+    float: left;
+  }
